@@ -22,15 +22,24 @@ This project uses the **PhysioNet EEG Motor Movement/Imagery Database**:
 
 ## Features
 
-The notebook (`visualize_physionet_eeg.ipynb`) includes:
+The notebook (`visualize.ipynb`) includes:
 
 1. **Automated Data Download**: Downloads EDF files directly from PhysioNet
 2. **Time-Series Visualization**: Multi-channel plots showing EEG signals over time
 3. **Single Channel Analysis**: Detailed view of individual channels with statistics
 4. **Power Spectral Density (PSD)**: Frequency domain analysis showing brain wave bands
 5. **Topographic Mapping**: Spatial distribution of EEG activity across the scalp
-6. **Interactive Browser**: MNE-based interactive visualization for detailed exploration
-7. **Statistical Analysis**: Summary statistics for data quality assessment
+6. **Phase Lag Index (PLI) Connectivity Heatmaps**: 
+   - Visualize functional connectivity between brain regions
+   - Multi-condition comparison with difference maps
+   - Uses diverging colormaps for highlighting connectivity changes
+7. **Enhanced PSD Topographic Maps**:
+   - Spatial distribution across multiple frequency bands (delta, theta, alpha, beta)
+   - Multi-condition comparison for task-related analysis
+   - Difference maps showing power changes between conditions
+   - Smooth interpolation with proper electrode positioning
+8. **Interactive Browser**: MNE-based interactive visualization for detailed exploration
+9. **Statistical Analysis**: Summary statistics for data quality assessment
 
 ## Installation
 
@@ -97,8 +106,16 @@ The notebook generates several visualization types:
 1. **Multi-channel time-series plots**: Shows 7 channels over 10 seconds
 2. **Detailed single-channel view**: 5-second detailed view with statistics
 3. **Power spectral density plots**: Frequency analysis with marked brain wave bands
-4. **Topographic maps**: Spatial distribution of EEG activity
-5. **Interactive browser**: Scrollable view of all channels
+4. **Basic topographic maps**: Spatial distribution of EEG activity
+5. **PLI connectivity heatmaps**: Phase lag index matrices showing functional connectivity
+   - Single condition heatmaps with sequential colormaps
+   - Multi-condition comparison panels
+   - Difference maps with diverging colormaps
+6. **Enhanced PSD topographic maps**: Publication-quality brain maps
+   - Multiple frequency bands visualization
+   - Condition comparison with difference maps
+   - Proper electrode positioning and interpolation
+7. **Interactive browser**: Scrollable view of all channels
 
 ## Troubleshooting
 
