@@ -2,6 +2,9 @@
 
 A comprehensive Jupyter notebook for downloading and visualizing EEG (Electroencephalography) data from the PhysioNet EEG During Mental Arithmetic Tasks Dataset.
 
+> You can also access it via the following Google Collab link:
+- [https://colab.research.google.com/drive/15Bd4WXSgjV_2S0CPgj2cJVEFaE5TnIk8](https://colab.research.google.com/drive/15Bd4WXSgjV_2S0CPgj2cJVEFaE5TnIk8)
+
 ## Overview
 
 This project provides a complete pipeline for:
